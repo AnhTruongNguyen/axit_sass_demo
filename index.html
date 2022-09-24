@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sass</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+    <div class="main">
+        <header id="header">
+            <div class="home">
+            <a href="#"><img class="header__logo"  src="./src/img/logo_axit.png" alt=""></a>
+            </div>
+                <div id="nav">
+                    <ul>
+                        <li><a href="">Features</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Pricing</a></li>
+                        <li><a href="">Review</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+        </header>
+        <div id="banner">
+            <div class="row">
+                <div class="banner__ads">
+                    <img class="banner__logo" src="./src/img/logo_axit.png" alt="">
+                    <p class="banner__title">MODERN AXURE TEMPLATE
+                        FOR BEAUTIFUL PROTOTYPES</p>
+                    <p class="banner__line">______</p>
+                    <p class="banner__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                        euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+                        accumsan et viverra justo commodo.</p>
+                    <button class="banner__btn">Download</button>
+
+                </div>
+                <div class="banner__trial">
+                    <form action="">
+                        <div class="trial__title">
+                            <p>Try Your <span>Free</span> Trial Today</p>
+                        </div>
+                        <div class="trial__content">
+                        <input  type="text" placeholder="Name" required class="">
+                        <input type="email" placeholder="Email"required class="">
+                        <input type="text" placeholder="Password" required class="">
+                    </div>
+                        <button class="trial__btn">Get Started</button>
+                    </form>
+
+                </div>
+                
+            </div>
+        </div>
+        <div class="tab__trial">
+            <div class="tab__btn">
+                <button>Tab 1</button>
+                <button>Tab 2</button>
+                <button>Tab 3</button>
+
+            </div>
+            <div class="tab__content">
+                <h3>Tabs with soft transitioning effect.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+                    bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra 
+                    justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
+                    penatibus et magnis dis parturient montes.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+                    bibendum laoreet.</p>
+                <button>Download</button>
+            </div>
+            <img src="./src/img/tab.png" alt="">
+        </div>
+
+    </div>
+    <!-- cuộn màn hình hiện header -->
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script>
+        $(document).ready(function(){
+           $(window).scroll(function(){
+            if($(this).scrollTop()){
+                $('header ').addClass('sticky');
+            } else {
+                $('header ').removeClass('sticky');
+            }
+           });
+        });
+    </script> 
+    <!-- cuộn màn hình hiện header -->
+</body>
+</html>
